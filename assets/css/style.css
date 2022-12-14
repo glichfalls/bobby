@@ -396,6 +396,7 @@ body {
         padding: 2rem;
         height: 40vh;
         width: 25vw;
+        overflow: auto;
     }
 
     .box a {

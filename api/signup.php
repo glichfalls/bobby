@@ -1,5 +1,9 @@
 <?php
 
+require_once '../bootstrap.php';
+
+global $db;
+
 if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $username = $_POST['username'];
@@ -7,12 +11,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     /* $password_repeat = $_POST['passsword-repeat']; */
 
     //check if the inputs aren't empty
-    if(!empty($username) && !empty($password)) {
+    if($username !== '' && $password !== '') {
 
         //save to database
-        $query = "insert into users (username, password) values ('$username', '$password')";
-
-        mysqli_query($con, $query);
+        $db->query('insert into users (username, password) values (:username, :password)', [
+            'username' => $username,
+            'password' => password_hash($password, PASSWORD_BCRYPT),
+        ]);
 
         header("Location: /login");
 
