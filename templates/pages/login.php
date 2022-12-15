@@ -10,7 +10,7 @@
             <h3>password</h3>
             <input type="password" name="password" placeholder="password" id="password">
             <button type="submit">login</button><br />
-            <a href="/signup">sign up</a>
+            <a href="/index.php?page=signup">sign up</a>
         </form>
     </div>
     <div class="box">

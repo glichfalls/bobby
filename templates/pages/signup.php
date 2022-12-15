@@ -12,7 +12,7 @@
             <!-- <h3>confirm password</h3>
             <input type="password" name="password-repeat" placeholder="confirm password" id="password-repeat"> -->
             <button type="submit">sign up</button></br>
-            <a href="/login">login</a>
+            <a href="/index.php?page=login">login</a>
         </form>
     </div>
     <div class="box">

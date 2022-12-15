@@ -12,10 +12,10 @@
 
     </div>
     <div class="box">
-        <a href="/skills">
+        <a href="/index.php?page=skills">
             <h2>about me & skills</h2>
         </a>
-        <a href="/skills" class="bottom-text">
+        <a href="/index.php?page=skills" class="bottom-text">
             <p>[learn more about me and my skills]</p>
         </a>
     </div>
@@ -23,10 +23,10 @@
 <!-- bottom row of boxes -->
 <div class="boxrow">
     <div class="box">
-        <a href="/work">
+        <a href="/index.php?page=work">
             <h2>my work</h2>
         </a>
-        <a href="/work" class="bottom-text">
+        <a href="/index.php?page=work" class="bottom-text">
             <p>[view all the projects i made so far]</p>
         </a>
     </div>
@@ -34,10 +34,10 @@
 
     </div>
     <div class="box">
-        <a href="/experience">
+        <a href="/index.php?page=experience">
             <h2>experience & education</h2>
         </a>
-        <a href="/experience" class="bottom-text">
+        <a href="/index.php?page=experience" class="bottom-text">
             <p>[all the places i worked and learned new things]</p>
         </a>
     </div>
@@ -47,7 +47,7 @@
             <p>
                 sumpfstrasse 21<br />
                 4554 etziken<br /><br /><br />
-                <a href="mailto: info@robin-ingold.ch">info@robin-ingold.ch</a><br />
+                <a href="mailto:info@robin-ingold.ch">info@robin-ingold.ch</a><br />
                 +41 79 852 17 20
             </p>
         </div>

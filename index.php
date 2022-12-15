@@ -1,5 +1,15 @@
 <?php
 require_once 'bootstrap.php';
-$template = sprintf('templates/pages/%s.php', $_SERVER['REQUEST_URI']);
-$page = file_exists($template) ? $template : 'templates/pages/home.php';
+
+$template = 'templates/pages/home.php';
+$title = 'Home';
+
+if (isset($_GET['page'])) {
+    $title = $_GET['page'];
+    $path = 'templates/pages/' . $_GET['page'] . '.php';
+    if (file_exists($template)) {
+        $template = $path;
+    }
+}
+
 require_once 'templates/base.php';

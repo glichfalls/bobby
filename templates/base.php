@@ -1,4 +1,4 @@
-<?php global $title, $page; ?>
+<?php global $title, $template; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
                 <p><?= $_GET['error']; ?></p>
             </div>
         <?php endif ?>
-        <?php require $page ?>
+        <?php require $template ?>
     </main>
     <?php require 'templates/components/footer.php'; ?>
 </body>
