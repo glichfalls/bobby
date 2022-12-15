@@ -7,7 +7,7 @@ $title = 'Home';
 if (isset($_GET['page'])) {
     $title = $_GET['page'];
     $path = 'templates/pages/' . $_GET['page'] . '.php';
-    if (file_exists($template)) {
+    if (file_exists($path)) {
         $template = $path;
     }
 }
